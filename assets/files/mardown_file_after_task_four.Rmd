@@ -10,37 +10,35 @@ output: html_document
 ### Lists
 
 1. Element one
-2. Element two
-3. Element three
+2. *Element* two
+3. Element **three**
 4. Elemnt four
 
 * One
 * Two
-    + Two one
+    + Two ***one***
     + Two two
         - Two two one
 * Three
     1. Three one
     2. Three two
+    
 
-## Your turn (plots)
+### Tables            
+
+| First | Second | Third | Fourth | Fifth |
+|:-----:|--------|-------|--------|------:|
+|   1   | 2      | 3     | 4      |     5 |
+|   5   | 4      | 3     | 2      |     1 |
+|   1   | 2      | 3     | 4      |     5 |
 
 ### Plots
 
-```{r preparation, include = F}
-srequire(ggplot2)
+```{r preparation_packages, include = F}
+require(ggplot2)
+require(knitr)
 ```
 
 ```{r fig.align = 'center', fig.width = 6, fig.height = 4, echo = F}
 qplot(mpg, wt, data=mtcars, colour=cyl)
-```
-
-### Automagical Tables
-
-```{r preparation, include = F}
-subset_of_mtcars = head(mtcars, 7)
-```
-
-```{r themagictable, results = 'asis'}
-kable(subset_of_mtcars, format = "markdown", digits = 1)
 ```

@@ -285,6 +285,7 @@ This is ***bold and italic*** (sometimes also ___bat___)
 - Create a numbered list (hint: 1., 2. 3.)
 - Create a bullet list (hint: *, +, -)
 - Try out nesting (4 spaces indent)
+- Add some emphasis to list elements words (* ,** ,*** )
 
 <a href="assets/files/mardown_file_after_task_two.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
 
@@ -325,8 +326,42 @@ This is ***bold and italic*** (sometimes also ___bat___)
 
 <a href="http://www.tablesgenerator.com/markdown_tables" class="btn flushfooter"><i class="icon-home"></i> Table Generator</a>
 
+--- bg:#EEE
+
+## Your turn (tables)
+
+</br>
+
+- Add a 3rd level header (e.g. Tables)
+- Create a small table with
+  + 5 Columns (Put names in the header)
+  + 4 Rows (Fill with any numbers)
+  + Align the first colum right
+  + Align the last column left
+
+<div class = "flushfooter">
+<a href="assets/files/mardown_file_after_task_three.Rmd" class="btn"><i class="icon-download"></i> Failed? Your rescue!</a> <a href="http://www.tablesgenerator.com/markdown_tables" class="btn"><i class="icon-home"></i> Detexify</a>
+</div>
+
+--- bg:#EEE
+
+## Your turn (tables)
+
+* Source:
+
+<img src="assets/img/rstudio_markdown_tables_your_turn_result.png" style="width: 500px;"/>
+
+* Output:
+
+<img src="assets/img/rstudio_markdown_tables_task_results.png" style="width: 900px;"/>
+
+<div class = "flushfooter">
+<a href="assets/files/mardown_file_after_task_three.Rmd" class="btn"><i class="icon-download"></i> Failed? Your rescue!</a> <a href="http://www.tablesgenerator.com/markdown_tables" class="btn"><i class="icon-home"></i> Detexify</a>
+</div>
 
 ---
+
+
 
 ## R-Markdown Syntax (links)
 
@@ -530,7 +565,7 @@ qplot(Sepal.Length, Petal.Length, data = iris, color = Species,
   - center the plot!
   - resize till it looks correct
 
-<a href="assets/files/mardown_file_after_task_three.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
+<a href="assets/files/mardown_file_after_task_four.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
 
 --- bg:#EEE
 
@@ -550,6 +585,8 @@ Needs option: `include = FALSE`
 suppressPackageStartupMessages(library(gdata))
 ```
 
+<a href="assets/files/mardown_file_after_task_four.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
+
 --- bg:#EEE  
 
 ## Your turn (plots)
@@ -562,6 +599,8 @@ The plot chunk:
     ```
 
 <img src="assets/fig/unnamed-chunk-5.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" style="display: block; margin: auto;" />
+
+<a href="assets/files/mardown_file_after_task_four.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
 
 ---
 
@@ -621,7 +660,7 @@ kable(head(iris[,1:3]), format = "markdown")
   - truncate the digits to 1 (digits = 1)
 1. Knit to HTML
 
-<a href="assets/files/mardown_file_after_task_four.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
+<a href="assets/files/mardown_file_after_task_five.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
 
 --- bg:#EEE
 
@@ -643,6 +682,8 @@ The table chunk:
 
 * as output is already markdown we set: `results = 'asis'`
 * truncate: `digits = 1`
+
+<a href="assets/files/mardown_file_after_task_five.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
 
 --- bg:#EEE
 
@@ -668,6 +709,8 @@ kable(subset_of_mtcars, format = "markdown", digits = 1)
 |Hornet Sportabout | 18.7|   8|  360| 175|  3.1| 3.4| 17.0|  0|  0|    3|    2|
 |Valiant           | 18.1|   6|  225| 105|  2.8| 3.5| 20.2|  1|  0|    3|    1|
 |Duster 360        | 14.3|   8|  360| 245|  3.2| 3.6| 15.8|  0|  0|    3|    4|
+
+<a href="assets/files/mardown_file_after_task_five.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
 
 ---
 
@@ -764,7 +807,7 @@ output_format: word_document
   + MD -> Word
   + MD -> HTML
 - More complex documents (print, PDF)
-  + LaTeX is better
+  + LaTeX is more suitable (source document)
   + Supports you with (references, citation, formulas, ...)
   + But is much harder to learn
 

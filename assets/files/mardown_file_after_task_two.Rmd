@@ -10,16 +10,15 @@ output: html_document
 ### Lists
 
 1. Element one
-2. Element two
-3. Element three
+2. *Element* two
+3. Element **three**
 4. Elemnt four
 
 * One
 * Two
-    + Two one
+    + Two ***one***
     + Two two
         - Two two one
 * Three
     1. Three one
     2. Three two
-  
