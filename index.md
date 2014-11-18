@@ -336,11 +336,12 @@ This is ***bold and italic*** (sometimes also ___bat___)
 - Create a small table with
   + 5 Columns (Put names in the header)
   + 4 Rows (Fill with any numbers)
-  + Align the first colum right
-  + Align the last column left
+  + Center the first column
+  + Align the last column right
 
 <div class = "flushfooter">
-<a href="assets/files/mardown_file_after_task_three.Rmd" class="btn"><i class="icon-download"></i> Failed? Your rescue!</a> <a href="http://www.tablesgenerator.com/markdown_tables" class="btn"><i class="icon-home"></i> Detexify</a>
+   <a href="assets/files/mardown_file_after_task_three.Rmd" class="btn"><i class="icon-download"></i> Failed? Your rescue!</a> 
+   <a href="http://www.tablesgenerator.com/markdown_tables" class="btn"><i class="icon-home"></i> Table Generator</a>
 </div>
 
 --- bg:#EEE
@@ -356,7 +357,8 @@ This is ***bold and italic*** (sometimes also ___bat___)
 <img src="assets/img/rstudio_markdown_tables_task_results.png" style="width: 900px;"/>
 
 <div class = "flushfooter">
-<a href="assets/files/mardown_file_after_task_three.Rmd" class="btn"><i class="icon-download"></i> Failed? Your rescue!</a> <a href="http://www.tablesgenerator.com/markdown_tables" class="btn"><i class="icon-home"></i> Detexify</a>
+   <a href="assets/files/mardown_file_after_task_three.Rmd" class="btn"><i class="icon-download"></i> Failed? Your rescue!</a> 
+   <a href="http://www.tablesgenerator.com/markdown_tables" class="btn"><i class="icon-home"></i> Table Generator</a>
 </div>
 
 ---
