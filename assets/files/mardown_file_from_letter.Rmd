@@ -1,0 +1,75 @@
+---
+title: "My research report"
+author: "Karl White"
+date: "17.11.2014"
+output: html_document
+---
+
+```{r loading, include = F}
+require(ggplot2)
+```
+
+
+## Introduction
+
+Lorem ipsum dolor *sit* amet, consetetur sadipscing elitr, sed diam  
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  
+sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebu.   
+Stet clita kasd gubergren, no sea **takimata** sanctus est Lorem ipsum 
+dolor sit amet. 
+
+## Results
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam  
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  
+sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebu.
+
+* lorem
+  - ipsum
+  - dolor
+  
+1. et
+  - dolore
+  - magna
+
+### The cars dataset
+
+```{r}
+summary(cars)
+```
+
+### The plots
+
+```{r fig.width=7, fig.height=6}
+plot(cars)
+```
+
+```{r fig.width = 8, fig.height = 5, fig.align = 'center'}
+qplot(Sepal.Length, Petal.Length, data = iris, color = Species,
+  xlab = "Sepal Length", ylab = "Petal Length",
+  main = "Sepal vs. Petal Length in Fisher's Iris data")
+```
+
+Lorem ipsum dolor *sit* amet, consetetur sadipscing elitr, sed diam  
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  
+sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebu.   
+Stet clita kasd gubergren, no sea **takimata** sanctus est Lorem ipsum 
+dolor sit amet.  
+
+### The formula
+
+$$V_t(S_t) = \max_{x_t \in \chi_t} \left(C(S_t, x_t) + 
+            \gamma \sum_{s^{\prime} \in \mathcal{S}} \mathbb{P}(s^{\prime} | S_t^n, x_t) V_{t+1}^{n-1} s^{\prime} \right)$$
+            
+            
+### A quote
+
+Lorem ipsum dolor *sit* amet, consetetur sadipscing elitr, sed diam  
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  
+sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebu.   
+Stet clita kasd gubergren, no sea **takimata** sanctus est Lorem ipsum 
+dolor sit amet.  
+
+> 42 is the answer to the meaning of life,  
+> the universe, and everything.  
+> *Douglas Adams*  

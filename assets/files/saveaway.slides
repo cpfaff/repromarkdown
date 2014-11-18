@@ -1,0 +1,21 @@
+---  
+
+## What is reproducible reporting?
+
+* Definition: 
+
+> Reproducible reporting is a techique of research report generation    
+> where we intermix the documentation with the analysis script. We   
+> can turn a source document (e.g .Rmd) into nicely formatted output   
+> document. This supports the fundamental scientific principle of reproducibility.   
+> This means the ability to repeat an entire experiment or study,   
+> either by the original researcher or by someone else working independently    
+> on the same topic.
+
+* Promotes:
+  - Accuracy/correctness  
+  => Others can better check what we have done!
+  - Extendability/Modifiability  
+  => Others can directly build on top of our work!
+
+<a href="http://bit.ly/186LZpq" class="btn flushfooter"><i class="icon-book"></i> Read on</a> 
