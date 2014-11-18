@@ -38,14 +38,14 @@ Imagine you get an E-Mail
 > 
 > I was working on an experiment over the last couple of months. Now  
 > I am currently analysing the data in R and write down everything  
-> for a paper. Could you be so nice and read through my manuscript  
-> and give me feedback?  
+> for a paper. Could you be so nice and read through my statistics 
+> manuscript and give me feedback?  
 > -- *All the best Karl*  
 
 <a href="assets/files/mardown_file_from_letter.Rmd" class="btn"><i class="icon-envelope"></i> Attachment.Rmd</a>
 
 * Only one file? (.Rmd)
-* Expected 2 files (.R, .docx)
+* Expected 2 files! (.R, .docx)
   
 * RStudio can open it (please open it now)!
   - You dont understand the syntax. (A mix of text and code?)
@@ -63,11 +63,11 @@ Imagine you get an E-Mail
 > with chunks of R-Code and then we speak of R-Markdown.  
 > It can be used for dynamic reproducible report creation.
 >
-> The document can be turned into an nicely formatted HTML page  
+> The document can be turned into an nicely formatted Document (e.g. HTML)  
 > where the code chunks are executed and replaced by their output.  
 > Just install the `knitr` R package first and then  
 > hit the knit to HTML button in your RStudio!  
-> -- *All the best Karl*  
+> -- *All the best Karl*
 
 * Rmd stands for R-Markdown
   - Intermixes markdown markup + R-Code
@@ -107,7 +107,7 @@ Imagine you get an E-Mail
 
 </br>
 
-* You start to get the idea
+* You start to get the idea: That is Cool ;-)
   - only 1 document!
   - prevents copy + paste
   - less error prone
@@ -159,20 +159,6 @@ Imagine you get an E-Mail
 
 ---
 
-## R-Markdown and R-Studio
-
-- Content sensitive menu bar
-  + Knit to HTML
-  + Chunk Menu (Insert, Execute)
-
-  <img src="assets/img/rstudio_markdown_navigation_bar.png" style="width: 1000px;"/>
-
-- Help (pops up in help browser)
-
- <img src="assets/img/rstudio_combined_help_bar_and_browser_markdown.png" style="width: 700px;"/>
-
----
-
 ## R-Markdown Syntax (Metadata)
 
 * Optional and R-Studio specific (embraced by ---)
@@ -188,6 +174,37 @@ output: html_document
 ```
 </br>
 <img src="assets/img/markdown_header_from_metadata.png" style="width: 800px;"/>
+
+--- bg:#EEE
+
+## Your turn (Rmd file)
+
+</br>
+
+- Please Create a .Rmd file 
+  + file > new > R-Markdown
+- In wizward
+  + Pick: Document type/ Format (HTML)
+  + Insert: Name and Title ("Reproducible Reporting")
+- Remove the example content (not the metadata)
+- Keep and use this document through the exercises!
+
+<a href="assets/files/mardown_file_after_task_one.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
+
+---
+
+## R-Markdown and R-Studio
+
+- Content sensitive menu bar
+  + Knit to HTML
+  + Chunk Menu (Insert, Execute)
+
+  <img src="assets/img/rstudio_markdown_navigation_bar.png" style="width: 1000px;"/>
+
+- Help (pops up in help browser)
+
+ <img src="assets/img/rstudio_combined_help_bar_and_browser_markdown.png" style="width: 700px;"/>
+
 
 ---
 
@@ -271,13 +288,27 @@ This is ***bold and italic*** (sometimes also ___bat___)
 </br>
 <img src="assets/img/markdown_header_emphasis_example.png" style="width: 900px;"/>
 
+--- bg:#EEE
+
+## Your turn (Lists and emphasis)
+
+</br>
+
+- Create 2nd level header (e.g Exercises)
+- Add a 3rd level header below (e.g. Lists)
+- Create a numbered list (hint: 1., 2. 3.)
+- Create a bullet list (hint: *, +, -)
+- Try out nesting (4 spaces indent)
+
+<a href="assets/files/mardown_file_after_task_two.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
+
 ---
 
 ## R-Markdown Syntax (quotes)
 
 </br>
 
-* Qouting with (greater than ">")
+* Quoting with (greater than ">")
 
 ```{r eval = F, include = T}
 > 42 is the answer to the meaning of life, 
@@ -305,7 +336,7 @@ This is ***bold and italic*** (sometimes also ___bat___)
 
 <img src="assets/img/rstudio_markdown_tables_htmls.png" style="width: 900px;"/>
 
-<a href="http://www.tablesgenerator.com/markdown_tables" class="btn"><i class="icon-home"></i> Table Generator</a>
+<a href="http://www.tablesgenerator.com/markdown_tables" class="btn flushfooter"><i class="icon-home"></i> Table Generator</a>
 
 
 ---
@@ -336,8 +367,8 @@ This is ***bold and italic*** (sometimes also ___bat___)
 ## R-Markdown Syntax (links)
 
 * Links as References
-  - Reference sections/figures/tables
-  - Not as sophisticated as Microsoft Word, Open Office, LaTeX
+  - Reference sections/figures/tables  (Microsoft Word, Open Office, LaTeX)
+  - No native support in markdown
   - But you can use HTML anchors
 
 * Set anchor
@@ -362,7 +393,7 @@ This is ***bold and italic*** (sometimes also ___bat___)
 ![deep thought](path/to/image/deep_thought.png "Deep Thought")
 ```
 
-<img src="assets/img/deep_thought.png" alt="deep thought" title = "Deep Thought" style="width: 400px;"/>
+<img src="assets/img/deep_thought.png" alt="deep thought" title = "Deep Thought" style="width: 350px;"/>
 
 * No direct control over size (HTML)
 
@@ -512,6 +543,8 @@ qplot(Sepal.Length, Petal.Length, data = iris, color = Species,
   - center the plot!
   - resize till it looks correct
 
+<a href="assets/files/mardown_file_after_task_three.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
+
 --- bg:#EEE
 
 ## Your turn (plots)
@@ -590,6 +623,8 @@ kable(head(iris[,1:3]), format = "markdown")
   - do not forget to set kable option (format = "markdown") 
   - truncate the digits to 1 (digits = 1)
 1. Knit to HTML
+
+<a href="assets/files/mardown_file_after_task_four.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
 
 --- bg:#EEE
 
@@ -714,10 +749,18 @@ output_format: word_document
 
 ## Wrapup
 
+</br>
+
 - conversion from MD works great in most cases (flexible)
-- More complex documents (print, PDF) LaTeX is better
-- Supports you with (references, citation, formulas, ...)
-- But is much harder to learn
+  + MD -> PDF
+  + MD -> Word
+  + MD -> HTML
+- More complex documents (print, PDF)
+  + LaTeX is better
+  + Supports you with (references, citation, formulas, ...)
+  + But is much harder to learn
+
+<a href="http://cpfaff.github.io/reproducibility/#1" class="btn flushfooter"><i class="icon-book"></i> Repro. reporting (full course with latex)</a>
 
 --- bg:#EEE
 
@@ -734,29 +777,6 @@ output_format: word_document
 * do you get what you expected?
 
 <a href="https://github.com/cpfaff/repromarkdown/archive/gh-pages.zip" class="btn flushfooter"><i class="icon-download"></i> Get this presentation</a>  
-
----
-
-## Wrapup: Which format to choose?
-
-* Markdown
-  - designed to write for the web
-  - easy to learn and write
-  - Syntax: http://daringfireball.net/projects/markdown/
-  - but has its limitations (e.g. figure size, references)
-  - markdown flavours support more features (multidoc)
-  
-> What happens if you ask for too much power from Markdown?  
-> – *Yihui Xie*  
-
-<img src="http://i.imgur.com/vGwGF7s.gif" style="width: 200px;"/>
-      
-<div class = "flushfooter">
-  <a href="http://yihui.name/en/2013/10/markdown-or-latex/" class="btn"><i class="icon-picture"></i> Blog-Post (Yihui)</a>
-</div>
-
----
-
 
 --- bg:#EEE
 
@@ -789,15 +809,9 @@ require(slidify)
 
 <a href="https://github.com/cpfaff/repromarkdown/archive/gh-pages.zip" class="btn flushfooter"><i class="icon-download"></i> Get this presentation</a>  
 
----
-
 --- bg:#EEE
 
-## What is reproducible reporting?
-
-* Open your R-Studio (+ new R script)
-
-* try: 
+## No root no install rights ;-p
 
 ```
 require(knitr)

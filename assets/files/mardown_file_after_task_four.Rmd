@@ -1,0 +1,46 @@
+---
+title: "Reproducible Reporting"
+author: "Yourname"
+date: "17.11.2014"
+output: html_document
+---
+
+## Exercises
+
+### Lists
+
+1. Element one
+2. Element two
+3. Element three
+4. Elemnt four
+
+* One
+* Two
+    + Two one
+    + Two two
+        - Two two one
+* Three
+    1. Three one
+    2. Three two
+
+## Your turn (plots)
+
+### Plots
+
+```{r preparation, include = F}
+srequire(ggplot2)
+```
+
+```{r fig.align = 'center', fig.width = 6, fig.height = 4, echo = F}
+qplot(mpg, wt, data=mtcars, colour=cyl)
+```
+
+### Automagical Tables
+
+```{r preparation, include = F}
+subset_of_mtcars = head(mtcars, 7)
+```
+
+```{r themagictable, results = 'asis'}
+kable(subset_of_mtcars, format = "markdown", digits = 1)
+```
