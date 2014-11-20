@@ -854,6 +854,7 @@ require(slidify)
 
 <div class = "flushcenter">
      <h1>Thanks for your attention!</h1>
+     <p> <h3> Any questions left? </h3> </p>
 </div>
 
 <a href="https://github.com/cpfaff/repromarkdown/archive/gh-pages.zip" class="btn flushfooter"><i class="icon-download"></i> Get this presentation</a>  

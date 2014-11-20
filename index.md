@@ -831,7 +831,7 @@ output_format: word_document
   - open in Rstudio: `index.Rmd` 
   - NOTE: Do not change anything in the file!
 * knit it to HTML!
-* do you get what you expected?
+* do you get what you expect?
 
 <a href="https://github.com/cpfaff/repromarkdown/archive/gh-pages.zip" class="btn flushfooter"><i class="icon-download"></i> Get this presentation</a>  
 
@@ -862,6 +862,7 @@ require(slidify)
 
 <div class = "flushcenter">
      <h1>Thanks for your attention!</h1>
+     <p> <h3> Any questions left? </h3> </p>
 </div>
 
 <a href="https://github.com/cpfaff/repromarkdown/archive/gh-pages.zip" class="btn flushfooter"><i class="icon-download"></i> Get this presentation</a>  
