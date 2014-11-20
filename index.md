@@ -1,17 +1,20 @@
 ---
-title       : Reproducible Reports
-subtitle    : With R, Knitr and Markdown 
-author      : Claas-Thido Pfaff 
-job         : http://cpfaff.github.io/repromarkdown
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : [mathjax, bootstrap]            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
-github      :
-  author    : cpfaff
-  repo      : repromarkdown
+title: "Reproducible Reports"
+author: "Claas-Thido Pfaff"
+github:
+  author: cpfaff
+  repo: repromarkdown
+output: pdf_document
+hitheme: tomorrow
+job: http://cpfaff.github.io/repromarkdown
+knit: slidify::knit2slides
+mode: selfcontained
+highlighter: highlight.js
+subtitle: With R, Knitr and Markdown
+framework: io2012
+widgets:
+- mathjax
+- bootstrap
 ---
 
 
@@ -116,8 +119,8 @@ Imagine you get an E-Mail
   - Steps: .Rnw -> .tex -> .PDF
   - Generate PDF reports (for Ba./Ma. Thesis, etc.)
 
-* R-Studio improves integrationn (Version 0.98.1028)
-  - From markdown -> .html, .PDF, word
+* R-Studio improves integration (Version 0.98.1028)
+  - From R-markdown -> .html, .PDF, word
 
 <div class = "flushfooter">
 <a href="http://yihui.name/knitr/" class="btn"><i class="icon-home"></i> Knitr</a> <a href="http://cpfaff.github.io/reproducibility/#1" class="btn"><i class="icon-book"></i> Repro. reporting (full course with latex)</a>
@@ -199,7 +202,7 @@ output: html_document
 * Headers for chapters and sections (Hash)
 
   ```
-  # Header ones
+  # Header one
   ## Header two
   ### Header three
   ...
@@ -390,8 +393,8 @@ This is ***bold and italic*** (sometimes also ___bat___)
 
 ## R-Markdown Syntax (links)
 
-* Links as References
-  - Reference sections/figures/tables  (Microsoft Word, Open Office, LaTeX)
+* Links as references
+  - Cross ref. sections/figures/tables  (Microsoft Word, Open Office, LaTeX)
   - No native support in markdown
   - But you can use HTML anchors
 
@@ -476,7 +479,7 @@ $$V_t(S_t) = \max_{x_t \in \chi_t} \left(C(S_t, x_t) +
 
 ## R-Markdown Syntax (code chunks)
 
-A code blocks plus (curly braces, r, options)
+A code block plus (curly braces, r, options)
 
     ```{r preparation, cache = TRUE, include = TRUE, eval = TRUE, echo = TRUE}
     x = c(1,2,3,4,5)
@@ -611,13 +614,13 @@ The plot chunk:
 Knitr can create markdown tables for you (Amazing!) 
 
 
-    ```{r results = 'asis'}
+    ```{r kabletable, results = 'asis'}
     kable(head(iris[,1:3]), format = "markdown")   
     ```
+    
+* Use the kable command (creates markdown)
 
 * requires chunk option: `results = 'asis'`
-
-* Use the kable command
 
 * kable parameters:
   - `align = c("c", "l", "r")`
@@ -656,10 +659,11 @@ kable(head(iris[,1:3]), format = "markdown")
 1. Create 3rd level header: e.g "Automagical Tables"
 1. Create a chunk that is not shown! (hint: include)
   - prepare 7 first rows of the `mtcars` dataset in a variable (hint: head)
+  - and add a `require(knitr)` in there for the kable command
 1. Create another chunk
-  - use kable to display the 7 rows (hint: results = 'asis') 
+  - use `kable()` to display the 7 rows (hint: results = 'asis') 
   - do not forget to set kable option (format = "markdown") 
-  - truncate the digits to 1 (digits = 1)
+  - truncate the digits to 1 (hint: digits = 1)
 1. Knit to HTML
 
 <a href="assets/files/mardown_file_after_task_five.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>

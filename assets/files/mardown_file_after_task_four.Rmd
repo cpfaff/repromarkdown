@@ -35,8 +35,8 @@ output: html_document
 ### Plots
 
 ```{r preparation_packages, include = F}
-require(ggplot2)
-require(knitr)
+if("ggplot2" %in% rownames(installed.packages()) == FALSE) install.packages("ggplot2") else require(ggplot2)
+if("knitr" %in% rownames(installed.packages()) == FALSE) install.packages("knitr") else require(knitr)
 ```
 
 ```{r fig.align = 'center', fig.width = 6, fig.height = 4, echo = F}
