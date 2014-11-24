@@ -1,10 +1,6 @@
 ---
 title: "Reproducible Reports"
 author: "Claas-Thido Pfaff"
-github:
-  author: cpfaff
-  repo: repromarkdown
-output: pdf_document
 hitheme: tomorrow
 job: http://cpfaff.github.io/repromarkdown
 knit: slidify::knit2slides
@@ -12,9 +8,10 @@ mode: selfcontained
 highlighter: highlight.js
 subtitle: With R, Knitr and Markdown
 framework: io2012
-widgets:
-- mathjax
-- bootstrap
+widgets: [mathjax, bootstrap]
+github:
+  author: cpfaff
+  repo: repromarkdown
 ---
 
 ```{r echo = FALSE, include = F, eval = T}
@@ -303,6 +300,52 @@ This is ***bold and italic*** (sometimes also ___bat___)
 - Create a bullet list (hint: *, +, -)
 - Try out nesting (4 spaces indent)
 - Add some emphasis to list elements words (* ,** ,*** )
+
+<a href="assets/files/mardown_file_after_task_two.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
+
+--- bg:#EEE
+
+## Your turn (Lists and emphasis)
+
+* Source: 
+
+```
+1. Element one
+2. *Element* two
+3. Element **three**
+4. Elemnt four
+
+* One
+* Two
+    + Two ***one***
+    + Two two
+        - Two two one
+* Three
+    1. Three one
+    2. Three two
+```
+
+<a href="assets/files/mardown_file_after_task_two.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
+
+--- bg:#EEE
+
+## Your turn (Lists and emphasis)
+
+* Result: 
+
+1. Element one
+2. *Element* two
+3. Element **three**
+4. Elemnt four
+
+* One
+* Two
+    + Two ***one***
+    + Two two
+        - Two two one
+* Three
+    1. Three one
+    2. Three two
 
 <a href="assets/files/mardown_file_after_task_two.Rmd" class="btn flushfooter"><i class="icon-download"></i> Failed? Your rescue!</a>
 
